@@ -1,1 +1,1 @@
-# mock-shopping-site
+Initial Commit basic contact page and a home page 6/22/2024
