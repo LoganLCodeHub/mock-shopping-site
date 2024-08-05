@@ -1,0 +1,53 @@
+#cartBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 10px 10px  lightgrey;
+    border-radius: 1em;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#cartItems {
+    display: flex;
+    background-color: lightgreen;
+    width: 450px;
+    height: 300px;
+    border-radius: 1em;
+}
+
+#checkOut {
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    width: 150px; /* Adjust button width if needed */
+    height: 50px; /* Adjust button height if needed */
+    background-color: #007bff; /* Optional: Set background color */
+    color: white; /* Optional: Set text color */
+    border: none; /* Optional: Remove border */
+    border-radius: 0.5em; /* Optional: Add border radius */
+    cursor: pointer; /* Optional: Change cursor to pointer */
+    margin-top: 20px; /* Optional: Add margin to position button */
+}
+
+#checkOut:hover {
+    background-color: #0056b3; /* Optional: Change background color on hover */
+}
+
+#checkoutButton {
+    display: block; 
+    width: 100%; 
+    text-align: center; 
+}
+
