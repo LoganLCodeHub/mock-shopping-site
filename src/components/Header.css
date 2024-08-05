@@ -1,0 +1,41 @@
+#organize {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    
+
+}
+
+#centerNav {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#center {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+#cartCenter {
+    display: flex;
+
+}
+
+#leftBox {
+    display: flex;
+    background-color:  #2f4f4f;
+    width:120px;
+    height:10px;
+    
+}
+
+.fas fa-cart-plus{
+    font-size:24px;
+    color: red;
+}

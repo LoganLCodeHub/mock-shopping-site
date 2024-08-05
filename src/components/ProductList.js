@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+//import ShoppingCart from './ShoppingCart';
+import './ProductList.css';
 
 function ProductList() {
+  const [cart, setCart] = useState([]);
+
   const products = [
     { id: 1, name: 'Product 1', price: 10, imageUrl: 'https://via.placeholder.com/150' },
     { id: 2, name: 'Product 2', price: 20, imageUrl: 'https://via.placeholder.com/150' },
@@ -13,18 +17,25 @@ function ProductList() {
     { id: 9, name: 'Product 9', price: 90, imageUrl: 'https://via.placeholder.com/150' },
   ];
 
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+  };
+
   return (
-    <div className="product-list">
+    <>
       <h2 id="h2-unique-font">Products</h2>
-      <div className="product-container">
-        {products.map(product => (
-          <div key={product.id} className="product-item">
-            <img src={product.imageUrl} alt={product.name} />
-            <p>{product.name} - ${product.price}</p>
-          </div>
-        ))}
+      <div className="product-list">
+        <div className="product-container">
+          {products.map(product => (
+            <div key={product.id} className="product-item">
+              <img src={product.imageUrl} alt={product.name} />
+              <p>{product.name} - ${product.price}</p>
+              <button onClick={() => addToCart(product)}>Add to Cart</button>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
